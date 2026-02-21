@@ -1,5 +1,8 @@
 # Nuway Roofing - Roofing Solutions Platform 🏠
 
+[![Nuway Roofing MFE CI](https://github.com/Yashvaddi/Profile/actions/workflows/nuway-ci.yml/badge.svg)](https://github.com/Yashvaddi/Profile/actions/workflows/nuway-ci.yml)
+
+
 Nuway Roofing is a comprehensive solution for the US roofing industry, automating the connection between contractors, insurance companies, and customers. It transforms the manual, complex process of roofing installation, repair, and maintenance into a fully automated digital workflow.
 
 ---
@@ -15,7 +18,7 @@ Nuway Roofing is a comprehensive solution for the US roofing industry, automatin
 - **Language:** **TypeScript** for consistent data modeling across insurance and contractor entities.
 - **Real-time Engine:** Integrated **Socket.IO** for live project status updates and coordination.
 - **Testing:** **Jest** for validating quotation logic and insurance claim calculations.
-- **Performance:** Optimized for mobile-first usage by contractors in the field.
+- **Performance:** Optimized for mobile-first usage by contractors in the field.    
 
 ---
 
@@ -62,6 +65,7 @@ nuway-roofing/
 ## ✨ Showcase Components
 - **[Roofing Canvas Builder](./src/components/view/RoofingCanvasBuilder.tsx):** Complex **Konva.js** tool for on-site roofing measurements.
 - **[Real-time Status Sync](./src/hooks/useSocket.ts):** Live coordination between contractors and insurance.
+- **[Quotation Engine](./src/services/QuotationService.ts):** Complex insurance split and material cost calculation logic.
 
 ---
 

@@ -1,5 +1,8 @@
 # Wellness - Healthcare Commerce Platform 🏥
 
+[![Wellness MFE CI](https://github.com/Yashvaddi/Profile/actions/workflows/wellness-ci.yml/badge.svg)](https://github.com/Yashvaddi/Profile/actions/workflows/wellness-ci.yml)
+
+
 Wellness is a high-performance healthcare commerce platform built with **Next.js** and **TypeScript**. It facilitates secure connectivity between patients, pharmacies, and clinics, streamlining medicine fulfillment through automated routing and real-time tracking.
 
 ---

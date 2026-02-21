@@ -1,5 +1,6 @@
-# Discover Equestrian - Premium Property Marketplace 🐎
+# Discover Equestrian - 3D Real Estate Platform 🐎
 
+[![Discover Equestrian MFE CI](https://github.com/Yashvaddi/Profile/actions/workflows/equestrian-ci.yml/badge.svg)](https://github.com/Yashvaddi/Profile/actions/workflows/equestrian-ci.yml)
 Discover Equestrian is a specialized property and services listing platform tailored for the United Kingdom's horse industry. It provides a seamless experience for buying, selling, and renting equestrian properties, businesses, and services.
 
 ---
@@ -63,7 +64,7 @@ discover-equestrian/
 
 ## ✨ Showcase Components
 - **[3D Property Viewer Hook](./src/hooks/useProperty3DViewer.ts):** Advanced **Three.js** integration for 3D estate visualization.
-- **[Property Listing Engine](./src/hooks/useProperty3DViewer.ts):** Optimized search and coordinate mapping.
+- **[Property Listing Engine](./src/hooks/usePropertyListing.ts):** Optimized search and coordinate mapping.
 
 ---
 

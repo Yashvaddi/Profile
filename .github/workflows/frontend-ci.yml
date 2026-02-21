@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        project: [mfe-shell, projects/wellness, projects/sales-crm, projects/discover-equestrian, projects/boatdox, projects/candidSuite, projects/nuway-roofing]
+        project: [mfe-shell, projects/wellness, projects/sales-crm, projects/discover-equestrian, projects/boatdox, projects/candidSuite, projects/nuway-roofing, projects/core-utilities]
     
     steps:
     - uses: actions/checkout@v3

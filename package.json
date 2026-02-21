@@ -7,7 +7,7 @@
     "projects/*"
   ],
   "scripts": {
-    "dev": "concurrently \"npm run dev:shell\" \"npm run dev:wellness\" \"npm run dev:crm\" \"npm run dev:equestrian\" \"npm run dev:boatdox\" \"npm run dev:candid\" \"npm run dev:nuway\"",
+    "dev": "concurrently \"npm run dev:shell\" \"npm run dev:wellness\" \"npm run dev:crm\" \"npm run dev:equestrian\" \"npm run dev:boatdox\" \"npm run dev:candid\" \"npm run dev:nuway\" \"npm run dev:utilities\"",
     "dev:shell": "cd mfe-shell && npm run dev",
     "dev:wellness": "cd projects/wellness && npm run dev",
     "dev:crm": "cd projects/sales-crm && npm run dev",
@@ -15,6 +15,7 @@
     "dev:boatdox": "cd projects/boatdox && npm run dev",
     "dev:candid": "cd projects/candidSuite && npm run dev",
     "dev:nuway": "cd projects/nuway-roofing && npm run dev",
+    "dev:utilities": "cd projects/core-utilities && npm run dev",
     "lint": "eslint .",
     "test": "jest",
     "build:all": "npm run build --workspaces"

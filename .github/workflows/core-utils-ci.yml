@@ -1,0 +1,23 @@
+name: Core Utilities MFE CI
+
+on:
+  push:
+    paths:
+      - 'projects/core-utilities/**'
+  pull_request:
+    paths:
+      - 'projects/core-utilities/**'
+
+jobs:
+  test_and_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install
+        run: cd projects/core-utilities && npm install
+      - name: Build
+        run: cd projects/core-utilities && npm run build

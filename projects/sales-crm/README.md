@@ -1,5 +1,8 @@
 # Sales CRM - Enterprise Lead Management 📊
 
+[![Sales CRM MFE CI](https://github.com/Yashvaddi/Profile/actions/workflows/sales-crm-ci.yml/badge.svg)](https://github.com/Yashvaddi/Profile/actions/workflows/sales-crm-ci.yml)
+
+
 Sales CRM is a robust platform designed for IT companies to track, communicate, and convert leads with advanced multi-channel integration. It transitions leads from basic contact info to advanced communication phases using real-time sync and automated messaging.
 
 ---

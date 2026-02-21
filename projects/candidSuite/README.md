@@ -1,4 +1,6 @@
-# CandidSuite - Intelligent ATS 👔
+# CandidSuite - Enterprise ATS Platform 💼
+
+[![CandidSuite MFE CI](https://github.com/Yashvaddi/Profile/actions/workflows/candid-suite-ci.yml/badge.svg)](https://github.com/Yashvaddi/Profile/actions/workflows/candid-suite-ci.yml)
 
 CandidSuite is a high-performance Applicant Tracking System (ATS) that automates recruitment workflows. It transforms the hiring process from manual tracking to a data-driven experience with detailed analytics, pipeline visualization, and automated candidate management.
 
@@ -61,7 +63,7 @@ candidsuite/
 
 ## ✨ Showcase Components
 - **[Recruitment ROI Widget](./src/components/view/RecruitmentROIWidget.tsx):** Advanced data visualization with **Recharts** and memoized ROI calculations.
-- **[Visual Pipeline Board](./src/components/view/RecruitmentROIWidget.tsx):** High-performance candidate state management.
+- **[Interview Pipeline](./src/components/view/InterviewPipeline.tsx):** High-performance candidate state management.
 
 ---
 

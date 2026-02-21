@@ -1,5 +1,8 @@
 # BoatDox - Maritime Documentation Platform 🚢
 
+[![BoatDox MFE CI](https://github.com/Yashvaddi/Profile/actions/workflows/boatdox-ci.yml/badge.svg)](https://github.com/Yashvaddi/Profile/actions/workflows/boatdox-ci.yml)
+
+
 BoatDox is a comprehensive web platform designed for yacht brokers to **create, execute, and securely store maritime transaction documents**. It streamlines the complex legal workflows involved in buying and selling vessels, providing a secure and guided experience for all stakeholders.
 
 ---
@@ -60,8 +63,8 @@ boatdox/
 ---
 
 ## ✨ Showcase Components
-- **[Digital Signature Workflow](./src/services/api.ts):** Secure document execution patterns.
-- **[Role-Based Logic](./src/components/layout):** Multi-tenant dashboard architecture.
+- **[Digital Signature Workflow](./src/services/TransactionService.ts):** Secure document execution patterns.
+- **[Role-Based Logic](./src/components/layout/RoleGateway.tsx):** Multi-tenant dashboard architecture.
 
 ---
 

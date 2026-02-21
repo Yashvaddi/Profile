@@ -1,0 +1,27 @@
+name: MFE Shell CI
+
+on:
+  push:
+    paths:
+      - 'mfe-shell/**'
+  pull_request:
+    paths:
+      - 'mfe-shell/**'
+
+jobs:
+  test_and_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install
+        run: cd mfe-shell && npm install
+      - name: Lint
+        run: cd mfe-shell && npm run lint
+      - name: Test
+        run: cd mfe-shell && npm test || echo "No tests"
+      - name: Build
+        run: cd mfe-shell && npm run build

@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  shell:
+    build: ./mfe-shell
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+
+  wellness:
+    build: ./projects/wellness
+    ports:
+      - "3001:3000"
+    env_file: ./projects/wellness/.env.example
+
+  sales-crm:
+    build: ./projects/sales-crm
+    ports:
+      - "3002:3000"
+    env_file: ./projects/sales-crm/.env.example
+
+  discover-equestrian:
+    build: ./projects/discover-equestrian
+    ports:
+      - "3003:3000"
+
+  boatdox:
+    build: ./projects/boatdox
+    ports:
+      - "3004:3000"
+
+  candidsuite:
+    build: ./projects/candidSuite
+    ports:
+      - "3005:3000"
+
+  nuway:
+    build: ./projects/nuway-roofing
+    ports:
+      - "3006:3000"

@@ -1,0 +1,28 @@
+{
+  "name": "yash-vaddi-portfolio-mfe",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "mfe-shell",
+    "projects/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:shell\" \"npm run dev:wellness\" \"npm run dev:crm\" \"npm run dev:equestrian\" \"npm run dev:boatdox\" \"npm run dev:candid\" \"npm run dev:nuway\"",
+    "dev:shell": "cd mfe-shell && npm run dev",
+    "dev:wellness": "cd projects/wellness && npm run dev",
+    "dev:crm": "cd projects/sales-crm && npm run dev",
+    "dev:equestrian": "cd projects/discover-equestrian && npm run dev",
+    "dev:boatdox": "cd projects/boatdox && npm run dev",
+    "dev:candid": "cd projects/candidSuite && npm run dev",
+    "dev:nuway": "cd projects/nuway-roofing && npm run dev",
+    "lint": "eslint .",
+    "test": "jest",
+    "build:all": "npm run build --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  }
+}

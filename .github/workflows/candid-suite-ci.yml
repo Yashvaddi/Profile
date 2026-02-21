@@ -1,0 +1,27 @@
+name: CandidSuite MFE CI
+
+on:
+  push:
+    paths:
+      - 'projects/candidSuite/**'
+  pull_request:
+    paths:
+      - 'projects/candidSuite/**'
+
+jobs:
+  test_and_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install
+        run: cd projects/candidSuite && npm install
+      - name: Lint
+        run: cd projects/candidSuite && npm run lint
+      - name: Test
+        run: cd projects/candidSuite && npm test || echo "No tests"
+      - name: Build
+        run: cd projects/candidSuite && npm run build

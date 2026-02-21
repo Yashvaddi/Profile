@@ -1,54 +1,76 @@
-# Wellness - Healthcare Commerce Platform
+# Wellness - Healthcare Commerce Platform 🏥
 
-Wellness is a healthcare commerce platform built with **Next.js** (frontend) and **Nest.js** (backend) that connects patients, pharmacies, and clinics. It centralizes orders coming from external e‑commerce systems and automates routing, fulfillment, and tracking across multiple pharmacies in the US, while keeping patient data encrypted and consent-driven.
+Wellness is a high-performance healthcare commerce platform built with **Next.js** and **TypeScript**. It facilitates secure connectivity between patients, pharmacies, and clinics, streamlining medicine fulfillment through automated routing and real-time tracking.
 
-## What the platform does
+---
 
-- Syncs orders from external e‑commerce platforms into the Wellness system and keeps them in sync through the full lifecycle.
-- Automatically routes orders to the correct pharmacy based on configuration, location, and availability.
-- Lets pharmacies manage and track orders through an internal pharmacy tracking application integrated with Wellness.
-- Supports both **online** and **offline** orders across multiple pharmacies in the US.
-- Processes secure online payments via **Authorize.net**. 
-- Maps external product catalogs (e‑commerce SKUs) to each pharmacy’s internal medicine catalog, including dosage, strength, and other attributes.
-- Implements patient consent flows and encrypted storage of sensitive data to align with US healthcare/HIPAA expectations. 
+## 📸 Preview
+![Healthcare Dashboard](./public/screenshots/dashboard.png)
+*Wellness Healthcare Commerce Dashboard*
 
-## Tech stack
+---
 
-- **Frontend:** Next.js, React, TypeScript, component-driven UI  
-- **Backend:** Nest.js (Node.js), modular architecture, REST APIs 
-- **Cloud:** AWS (for secure hosting, storage, and encryption of data at rest and in transit) 
-- **Payments:** Authorize.net payment gateway for card transactions 
-- **Security & Compliance:**
-  - Encrypted patient data (at rest and in transit) using industry-standard algorithms. 
-  - Digital consent capture and signed consent records bound to patient and order data. 
-  - HIPAA‑aligned workflows, privacy/consent pages, and access control around PHI. 
+## 🚀 Technical Highlights
+- **Framework:** Next.js (App Router) for optimized performance and SEO.
+- **Language:** TypeScript for type-safe development and better maintainability.
+- **Architecture:** Modular, component-driven architecture aligned with HIPAA compliance standards.
+- **Testing:** Comprehensive unit and integration tests using **Jest** and React Testing Library.
 
-## Key features
+---
 
-- **Multi‑channel order ingestion:**  
-  Integrates with multiple e‑commerce sources; whenever a patient places an order there, the order is automatically created and synced inside Wellness.
+## 🛠️ Project Structure
+The project follows a scalable Next.js directory structure, ensuring a clear separation of concerns:
 
-- **Automated pharmacy routing:**  
-  Routes orders to the appropriate pharmacy and pushes them into the pharmacy’s tracking system for processing and fulfillment.
+```text
+wellness/
+├── public/                 # Static assets and screenshots
+├── src/
+│   ├── components/         # Reusable UI components
+│   │   ├── common/         # Buttons, Inputs, Modals
+│   │   ├── layout/         # Header, Footer, Sidebar
+│   │   └── view/           # Page-specific complex components
+│   ├── hooks/              # Custom React hooks for business logic
+│   ├── services/           # API integration and external services
+│   ├── styles/             # Global styles and Tailwind configurations
+│   ├── types/              # TypeScript interfaces and types
+│   └── utils/              # Helper functions and constants
+├── tests/
+│   ├── unit/              # Unit tests for components and hooks
+│   └── integration/       # Integration tests for end-to-end flows
+├── next.config.js          # Next.js configuration
+├── tailwind.config.js      # Styling configuration
+└── tsconfig.json           # TypeScript configuration
+```
 
-- **Pharmacy tracking & EPS‑style workflow:**  
-  Pharmacies can view, accept, process, and complete orders via an internal tracking UI integrated with Wellness.
+---
 
-- **Product mapping engine:**  
-  Maps e‑commerce products to pharmacy medicines, including strength, dosage, and formulation, ensuring the correct medication is dispensed.
+## ✨ Key Features
+- **Multi-channel Order Ingestion:** Real-time synchronization with external e-commerce platforms.
+- **Automated Pharmacy Routing:** Intelligent order distribution based on location and inventory.
+- **Pharmacy Tracking Dashboard:** End-to-end visibility for fulfillers with real-time status updates.
+- **Secure Payment Integration:** PCI-compliant processing via **Authorize.net**.
+- **HIPAA Compliance:** Encrypted patient data (AES-256) and digital consent management.
 
-- **Online & offline orders:**  
-  Supports online checkout with Authorize.net, as well as offline/phone orders managed through the same unified workflow.
+---
 
-- **Secure consent & questionnaires:**  
-  Patients complete consent forms and questionnaires, which are **signed**, stored, and encrypted, with auditable records of when and what they agreed to. 
+## 🧪 Testing Coverage (Jest)
+We prioritize reliability through a robust testing suite:
+- **Unit Tests:** Ensuring individual components (forms, buttons, charts) render correctly and handle edge cases.
+- **Hook Testing:** Validating state transitions and side effects in custom hooks.
+- **Mocking:** Utilizing `jest.mock` for API calls and external services to ensure isolated test environments.
 
-## Role & contributions
+---
 
-- Implemented frontend flows in **Next.js** for:
-  - Order listing, details, and status tracking for patients and pharmacies.
-  - Pharmacy dashboards for managing orders and inventory mappings.
-  - Consent and questionnaire UIs with clear UX around signing and submitting.
-- Worked on **Nest.js** API integration, connecting e‑commerce orders, pharmacy systems, and payment flows.
-- Helped design encrypted storage patterns and access control boundaries around sensitive patient and order data. 
-- Contributed to HIPAA‑aligned compliance pages (privacy, consent, rights) and to overall secure, scalable architecture. 
+## ✨ Showcase Components
+- **[Order Service Layer](./src/services/order.service.ts):** Encapsulated business logic for HIPAA-aligned order routing.
+- **[Secure API Client](./src/services/api.ts):** Custom Axios instance with compliance interceptors.
+- **[Domain Types](./src/types/index.ts):** Strict TypeScript modeling for healthcare entities.
+
+---
+
+## 🛡️ Role & Contributions
+- Lead the frontend development using **Next.js**, focusing on the patient and pharmacy dashboards.
+- Architecture the **Order Mapping Engine** that syncs diverse product catalogs into a unified system.
+- Implemented secure documentation flows for digital consent, ensuring HIPAA alignment.
+- Integrated **Authorize.net** for seamless and secure payment processing.
+- Maintained **80%+ test coverage** using Jest to ensure production stability.

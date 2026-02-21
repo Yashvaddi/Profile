@@ -1,59 +1,99 @@
-# Hi, I'm Yash Vaddi 👋
+# Yash Vaddi | Senior Frontend Engineer 🚀
 
-Frontend Engineer (Next.js + React.js) with **3.2 years** of experience building dynamic, user-focused web applications. I specialize in building **micro frontend architecture**, high-performance dashboards, and real-time experiences using React, Next.js, TypeScript, and Jest. 
+**Architecting Scalable Micro Frontend Ecosystems & High-Performance Enterprise Solutions**
 
-- 📍 Ahmedabad, Gujarat, India 
-- 💼 Software Developer @ Webcodegenie Technologies (Jan 2023 - Present) 
-- 🧩 Architecture: Micro Frontend Architecture, modular SPA design, component-driven development
-- 🧪 Testing: Jest (unit/integration), testing-friendly component design 
-- 🌐 Focus: Next.js, React, performance optimization, real-time features (Socket.IO/WebRTC) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yash_Vaddi-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/yashvaddi/)
+[![Email](https://img.shields.io/badge/Email-yashvaddi@gmail.com-D14836?style=flat-square&logo=gmail)](mailto:yashvaddi@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=flat-square&logo=vercel)](https://yashvaddi.com)
 
-## Tech stack
+---
 
-- **Frontend:** React.js, Next.js, JavaScript, TypeScript, JSX, React Hooks, Context API, Redux, Redux Thunk, React Query, Material UI, Tailwind CSS, Bootstrap, Konva.js, React-Konva, Three.js   
-- **Architecture:** Micro Frontend Architecture, modular UI, reusable components  
-- **Testing:** Jest   
-- **Realtime & Communication:** Socket.IO, WebRTC   
-- **DevOps & Cloud:** Docker, Nginx, AWS (S3, CloudFront), GitHub, GitLab, GitLab CI, Jira, Postman   
-- **Integrations:** REST API integration, Google Maps, OpenAI APIs 
+### 👋 Engineering Profile
+I am a **Senior Frontend Engineer** with **3.2 years of experience** specializing in **Micro Frontend (MFE) Architecture**, high-performance **Next.js/React** applications, and polyglot backend orchestration. I have a proven track record of delivering 10+ enterprise-grade applications, focusing on developer autonomy, sub-second performance, and strict security compliance (HIPAA/SOC2).
 
-## Experience
+---
 
-### Software Developer - Webcodegenie Technologies PVT LTD
-**Jan 2023 - Present | Ahmedabad, Gujarat** 
+### 🚀 High-Impact Engineering Capabilities
 
-- Implemented new features using JavaScript/React, contributing to a **25% reduction in system bugs** after deployment. 
-- Built and optimized complex UIs and dashboards for SaaS platforms, improving responsiveness and usability.
-- Worked on micro frontend-friendly codebases with clear module boundaries, shared UI components, and independent deployment where applicable.
-- Collaborated with cross-functional teams (backend, QA, product) in agile sprints to ship production-ready features. 
+- **Micro Frontend Orchestration**: Expert at designing and implementing Module Federation hosts and remote modules for massive scale.
+- **FinTech & Payments**: Integrated multi-gateway systems including **Stripe** and **Authorize.net** for $1M+ yacht transactions.
+- **Real-Time Engines**: Built low-latency dashboards using **Socket.IO**, **WebRTC**, and custom Web Workers.
+- **3D & Visualization**: Leveraged **Three.js** and **Konva.js** for interactive 3D property viewports and canvas-based structural builders.
+- **Compliance & Security**: Engineered PHI-safe healthcare systems with end-to-end AES-256 encryption and HIPAA-compliant API interceptors.
 
-## Highlighted projects
+---
 
-- **Wellness - Healthcare Commerce Platform (Next.js + Nest.js)**  
-  Built a HIPAA‑aligned healthcare commerce platform connecting patients, pharmacies, and clinics, with encrypted patient data, digital consent and questionnaire flows, and automated routing of e‑commerce orders to multiple US pharmacies, including secure payments via Authorize.net. [file:1]
+### 📁 Micro Frontend Portfolio (Project MFEs)
 
-- **BoatDox**  
-  Yacht broker platform to create, execute, and securely store listing transaction documents, with dashboards for every user type and guided workflows for smooth listings and sales.   
-  `Tech:` React / Next.js, TypeScript, Tailwind/Bootstrap, API integration, micro frontend-ready modules, Jest.
+Each module below is an independent Micro Frontend, demonstrating deep integration with diverse backend ecosystems.
 
-- **Discover Equestrian**  
-  Property and services listing platform where users can list for sale or rent, search, favorite, and chat with sellers, streamlining property dealings.   
-  `Tech:` Next.js, React, TypeScript, state management, payments integration, responsive UI.
+#### 🏥 [Wellness - Healthcare Portal](./projects/wellness)
+<p align="center">
+  <img src="./projects/wellness/public/screenshots/dashboard.png" width="800" alt="Wellness Dashboard" />
+</p>
+- **Stack**: Next.js 14 • NestJS • HIPAA Interceptors
+- **Highlight**: Secure Patient Health Portal with encrypted document management and real-time health scoring.
 
-- **CandidSuite (ATS)**  
-  Applicant Tracking System automating recruitment workflows with detailed reports and analytics for data-driven decisions.   
-  `Tech:` Next.js, React, charts/dashboards, filtering, advanced UI state, Jest-ready architecture.
+#### 🚢 [BoatDox - Maritime Transactions](./projects/boatdox)
+<p align="center">
+  <img src="./projects/boatdox/public/screenshots/home.png" width="800" alt="BoatDox Marketplace" />
+</p>
+- **Stack**: React • Java Spring Boot • Stripe & Authorize.net
+- **Highlight**: Multi-gateway payment system for high-value vessel deposits and maritime legal documentation.
 
-- **Nuway Roofing**  
-  Dynamic UI for quoting, project management, and DIY tools with a focus on performance, responsiveness, and real-time updates.   
-  `Tech:` React / Next.js, TypeScript, real-time updates, role-based UI.
+#### 🐎 [Discover Equestrian - 3D Real Estate](./projects/discover-equestrian)
+<p align="center">
+  <img src="./projects/discover-equestrian/public/screenshots/home.png" width="800" alt="Discover Equestrian Portfolio" />
+</p>
+- **Stack**: Next.js • Go (Golang) • Three.js 3D Engine
+- **Highlight**: Immersive 3D estate visualization and high-performance geospatial property search.
 
-- **Sales CRM**  
-  Full-featured CRM with multi-channel communication (call, SMS, email, WhatsApp, video call) plus modules for project tracking and lead requirements.   
-  `Tech:` React / Next.js, Socket.IO/WebRTC, complex form flows, dashboards.
+#### 📊 [Sales CRM - Real-Time Communications](./projects/sales-crm)
+<p align="center">
+  <img src="./projects/sales-crm/public/screenshots/dashboard.png" width="800" alt="Sales CRM Dashboard" />
+</p>
+- **Stack**: Next.js • Python FastAPI • Socket.IO
+- **Highlight**: Drag-and-drop lead pipeline with optimistic UI updates and real-time WhatsApp Business API synchronization.
 
-## Contact
+#### 💼 [CandidSuite - Enterprise ATS](./projects/candidSuite)
+<p align="center">
+  <img src="./projects/candidSuite/public/screenshots/dashboard.png" width="800" alt="CandidSuite ATS Dashboard" />
+</p>
+- **Stack**: Next.js • PHP Laravel • Gmail Bridge
+- **Highlight**: Advanced interview pipeline orchestrator with ROI tracking and cross-platform email synchronization.
 
-- 📧 Email: **yashvaddi@gmail.com**   
-- 📱 Phone: **+91 7600158762**   
-- 🌍 Location: Ahmedabad, Gujarat, India 
+#### 🏠 [Nuway Roofing - Structural Builder](./projects/nuway-roofing)
+<p align="center">
+  <img src="./projects/nuway-roofing/public/screenshots/home.png" width="800" alt="Nuway Roofing System" />
+</p>
+- **Stack**: React • .NET Core 8 • Konva.js
+- **Highlight**: Real-time canvas-based structural builder for insurance claim estimation.
+
+---
+
+### 🛠️ Core Tech Stack
+| Category | Technologies |
+| :--- | :--- |
+| **Orchestration** | **Module Federation**, Docker Compose, Nginx Reverse Proxy |
+| **Frontend** | **Next.js 14**, **React**, TypeScript, Redux Toolkit, Framer Motion |
+| **Backend Sync** | Node.js (Nest), Python (FastAPI), Go, Laravel, .NET |
+| **Real-Time** | **Socket.IO**, WebRTC, Server-Sent Events (SSE) |
+| **Graphics** | **Three.js**, **Konva.js**, SVG Animation, WebGL |
+| **Testing** | **Jest**, React Testing Library, Playwright |
+
+---
+
+### 🚢 Deployment & CI/CD
+This entire ecosystem is containerized for production parity across any environment.
+- **Docker Orchestration**: `docker-compose up --build` launches the entire portfolio.
+- **MFE CI/CD**: Independent GitHub Actions for each project, ensuring zero-downtime remote module updates.
+
+---
+
+### 📫 Contact
+- **Email:** [yashvaddi@gmail.com](mailto:yashvaddi@gmail.com)
+- **Phone:** +91 7600158762
+- **Location:** Ahmedabad, Gujarat, India (Open to Remote / Relocation)
+
+---
+<p align="center">Built with ❤️ and Precision Engineering</p>

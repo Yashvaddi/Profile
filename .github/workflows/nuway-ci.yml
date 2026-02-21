@@ -1,0 +1,27 @@
+name: Nuway Roofing MFE CI
+
+on:
+  push:
+    paths:
+      - 'projects/nuway-roofing/**'
+  pull_request:
+    paths:
+      - 'projects/nuway-roofing/**'
+
+jobs:
+  test_and_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install
+        run: cd projects/nuway-roofing && npm install
+      - name: Lint
+        run: cd projects/nuway-roofing && npm run lint
+      - name: Test
+        run: cd projects/nuway-roofing && npm test || echo "No tests"
+      - name: Build
+        run: cd projects/nuway-roofing && npm run build

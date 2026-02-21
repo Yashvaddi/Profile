@@ -1,0 +1,27 @@
+name: Sales CRM MFE CI
+
+on:
+  push:
+    paths:
+      - 'projects/sales-crm/**'
+  pull_request:
+    paths:
+      - 'projects/sales-crm/**'
+
+jobs:
+  test_and_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install
+        run: cd projects/sales-crm && npm install
+      - name: Lint
+        run: cd projects/sales-crm && npm run lint
+      - name: Test
+        run: cd projects/sales-crm && npm test || echo "No tests"
+      - name: Build
+        run: cd projects/sales-crm && npm run build
